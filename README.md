@@ -1,6 +1,7 @@
-# 🎿 Avalanche Insight - Pow Crew
+# 🎿 Avalanches Insights - Pow Crew
 
-## Léa Macaluso, Loïc Monnerat et Nathan Stader
+Projet réalisé par
+**Léa Macaluso, Loïc Monnerat & Nathan Stader** de la M51-2 dans le cadre du cours VisualDon.
 
 # 🏔️ Contexte
 
@@ -45,9 +46,9 @@ L'objectif de ce projet est de narrer l'histoire des risques d'avalanche en Suis
 
 Les données que nous exploitons sont utiliser dans aucun projet, cependant voici quelques ressources qui nous ont inspirées.
 
-Références en visualisation de données :
+**Références en visualisation de données :**
 - [My Life with Long COVID - NYTimes](https://www.nytimes.com/interactive/2023/12/14/opinion/my-life-with-long-covid.html?unlocked_article_code=1.F00.435C.ojkN6YhWx43Q)
 
-Inspirations :
+**Inspirations :**
 - [Design des montagnes par Toppluva](https://www.toppluva.com/GrandMountainAdventure/)
 - [Scrollytelling d’une randonnée à travers des images et de la 3D par High Mountains](https://www.highmountains.it/)
