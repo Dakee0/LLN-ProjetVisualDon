@@ -1,3 +1,7 @@
+# 🎿 Avalanche Insight - Pow Crew
+
+## Léa Macaluso, Loïc Monnerat et Nathan Stader
+
 # 🏔️ Contexte
 
 Le projet exploite deux principales sources de données pour analyser et comprendre les dynamiques des accidents d'avalanche en Suisse et leur corrélation avec la fréquentation des domaines skiables.
@@ -39,7 +43,7 @@ L'objectif de ce projet est de narrer l'histoire des risques d'avalanche en Suis
 
 ## 🔗 Références
 
-Les données que nous exploitons sont utiliser dans aucun projet, cependant voici quelques ressources qui nous ont inspirées :
+Les données que nous exploitons sont utiliser dans aucun projet, cependant voici quelques ressources qui nous ont inspirées.
 
 Références en visualisation de données :
 - [My Life with Long COVID - NYTimes](https://www.nytimes.com/interactive/2023/12/14/opinion/my-life-with-long-covid.html?unlocked_article_code=1.F00.435C.ojkN6YhWx43Q)
