@@ -52,3 +52,10 @@ Les données que nous exploitons sont utiliser dans aucun projet, cependant voic
 **Inspirations :**
 - [Design des montagnes par Toppluva](https://www.toppluva.com/GrandMountainAdventure/)
 - [Scrollytelling d’une randonnée à travers des images et de la 3D par High Mountains](https://www.highmountains.it/)
+
+# 🏂 Wireframe
+
+Pour visualiser le wireframe de notre projet "Avalanches Insights", veuillez consulter le lien ci-dessous :
+
+[Avalanches Insights - Pow Crew - Figma Wireframe](https://www.figma.com/file/J0yumac9cPtSHhCd50kUP0/WireFrame?type=design&node-id=50%3A2&mode=design&t=MbeE3cNlMaXyCaMQ-1)
+
