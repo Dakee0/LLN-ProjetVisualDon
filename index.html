@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,66 +8,174 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Unbounded:wght@200..900&display=swap"
+        rel="stylesheet">
 </head>
-<body>
 
-    <header>
-        <h1>avalanches insights</h1>
-        <img src="img/montagne(1).png" alt="image du cervin">
-        <img src="img/montagne(2).png" alt="image du cervin">
-        <img src="img/montagne(3).png" alt="image du cervin">
-        <a href="https://heig-vd.ch/">Projet dans le cadre d'un cour de l'heig-vd</a>
-        <a href="#sec1"></a>
-        <svg></svg>
-    </header>
+<body data-scroll-container>
 
-    <!-- le ski en suisse -->
-    <section id="sec1">
-        <h2 class="title left underline">le ski en suisse</h2>
-        <p class="small left">Pour la suisse, le ski n’est pas seulement une activité ou un sport.</p>
-        <p class="big right">Le ski fait partie de la culture suisse</p>
-        <div>
-            <p></p>
-            <img src="" alt="">
-        </div>
-        <p class="medium"></p>
+        <header data-scroll-section>
+            <h1 data-scroll-sticky data-scroll-target="header">avalanches insights</h1>
+            <img src="img/montagne(1).png" alt="image du cervin" data-scroll data-scroll-speed="3">
+            <img src="img/montagne(2).png" alt="image du cervin" data-scroll data-scroll-speed="2">
+            <img src="img/montagne(3).png" alt="image du cervin" data-scroll data-scroll-speed="1">
+            <a href="https://heig-vd.ch/" >Projet dans le cadre d'un cour de l'heig-vd</a>
+            <a href="#sec1"></a>
+            <svg></svg>
+        </header>
+    
+        <!-- le ski en suisse -->
+        <section id="sec1" data-scroll-section>
+            <h2 class="title left underline" data-scroll data-scroll-speed="4">le ski en suisse</h2>
+            <p class="small left" data-scroll data-scroll-speed="1">Pour la suisse, le <strong>ski</strong> n’est pas
+                seulement une activité ou un sport.</p>
+            <p class="big right" data-scroll data-scroll-speed="3">Le <strong>ski</strong> fait partie de la <strong>culture
+                    suisse</strong></p>
+            <div data-scroll data-scroll-speed="3">
+                <div>
+                    <p class="medium">Avec plus de</p>
+                    <p class="title yellow">22.3</p>
+                    <p class="medium">millions de journées skieurs pour la saison 22/23 dans les stations suisses</p>
+                </div>
+                <div>
+                    <!-- <img src="" alt=""> -->
+                </div>
+            </div>
+            <div class="right" data-scroll data-scroll-speed="3">
+                <p class="medium">Ce sport est en continuelle expansion avec une augmentation de </p>
+                <p class="title yellow">6%</p>
+                <p class="medium">chaque année de skieurs</p>
+            </div>
+    
+            <div data-scroll data-scroll-speed="2">
+                <p class="big">La <strong>suisse</strong> est également une des plus grosses nations dans ce sport</p>
+                <!-- <img src="" alt=""> -->
+            </div>
+            <div data-scroll data-scroll-speed="1">
+                <p class="big middle">Mais ce n’est pas sans <strong>danger</strong> !</p>
+            </div>
+        </section>
+    
+        <!-- les avalanches -->
+        <section id="sec2">
+            <video src="video/video-22s.mp4"></video>
+            <h2 class="title left underline" data-scroll data-scroll-speed="4">les avalanches</h2>
+            <div>
+                <p class="big">Un danger mortel innatendu</p>
+                <p>Les avalanches représentent le principal danger naturel dans l'espace alpin. Elles se manifestent sous la
+                    forme de masses de neige dévalant les pentes, résultant de l'instabilité du manteau neigeux. <br>
         
-    </section >
+                    La rupture de ce dernier peut être déclenchée par divers facteurs tels que des forces naturelles dûe à une
+                    simple accumulation de neige, le poids d'une personne ou d'une machine, voire même l'utilisation d'explosifs
+                    pour déclencher des avalanches potentielles lorsque personne ne se trouve dans la zone.</p>
+            </div>
+    
+    
+            <p class="big">Ces déferlements de neige <strong>emportent tout</strong> sur leur passage</p>
+    
+            <p class="big">Constituant une force puissante, souvent <strong>dévastatrice</strong> et
+                <strong>mortelle</strong>.</p>
+    
+        </section>
+    
+        <!-- En suisse -->
+        <section id="sec3">
+            <canvas></canvas>
+            <p class="right">Avec un total de <strong>1615</strong> avalanches qui ont répertorié pour avoir emporté des personnes sur les
+                10 dernières saisons (2012/2013 - 2022/2023), nous pouvons affirmer que c’est phénomène très présent en
+                Suisse et qui plus est, mortel. Car, sur ces <strong>1615</strong> avalanches, on dénombre un total de
+                <strong>231</strong> morts.</p>
+        </section>
+    
+        <!-- Nombre d'avalanche -->
+        <section id="sec4">
+            <svg></svg>
+            <p class="right">Si l’on remonte jusqu’au prémices des données que nous possédons, soit la saisons 1970/71, et que prenons une
+                période qui s’étend jusqu’au dernières données en notre possessions, soit la saison 2022/23, on observe un
+                totale de 4513 avalanches pour 8647 personnes emportés et tout de même 1305 personnes décédées.</p>
+        </section>
+    
+        <!-- Les types -->
+        <section id="sec5">
+            <div>
+                <p>57</p>
+                <p>%</p>
+                <div></div>
+                <p>La randonné à ski est le sport d’hiver le plus dangereux en montagne. On ne compte pas moins de 2581 morts.</p>
+            </div>
+            <div>
+                <p>33</p>
+                <p>%</p>
+                <div></div>
+                <p>Le hors piste est la deuxième cause de mortalité avec 1474 personnes décédées.</p>
+            </div>
+            <div>
+                <p>7</p>
+                <p>%</p>
+                <div></div>
+                <p>Le terme balisé englobe toutes les voies de communication, que ce soit des routes, des chemins, des voies de chemin de fer ou encore des pistes de ski. On dénombre 297 morts.</p>
+            </div>
+            <div>
+                <p>1</p>
+                <p>%</p>
+                <div></div>
+                <p>Même si c’est bien moins fréquent, il arrive que des bâtiments soit touché et que leurs occupants soit tué. Un total de 45 morts.</p>
+            </div>
+        </section>
+    
+        <!-- Anecdotes -->
+        <section id="sec6">
+            <h2 class="title left underline" data-scroll data-scroll-speed="4">anecdote</h2>
+            <div>
+                <p class="title yellow">2 mars 1985</p>
+                <p class="medium">9h00</p>
+            </div>
+            <p class="big">L’avalanche la plus meurtrière en Suisse s’abat.</p>
+            <p class="big right">Elle est l’avalanche la plus meurtrière des 52 dernières saisons. Elle emporte et tue 11 personnes...</p>
+            <p class="medium">Dont un petit garçon de 9 ans et son père, habitants à Taesch, ainsi que neuf occupants d’un minibus, le chauffeur de Törbel, deux Vaudois, un Zougois et quatre Allemands.</p>
+            <p class="medium right">La veille, il avait fortement neigé, des coulées de neige était annoncées pour cette journée fatidique.</p>
+            <p class="big yellow">L’avalanche aurait été déclenchée naturellement.</p>
+            <div>
+                <video src="video/Avalanche-Zermatt-02-03-1985.mp4"></video>
+                <!-- <img src="" alt="">
+                <img src="" alt=""> -->
+            </div>
+            <p class="medium">Suite à ce drame, un procès a été lancé contre le chef de service cantonal d’entretien des routes et le voyer de l’arrondissement de Viège.</p>
+            <p class="medium right">Car selon les plaignants, ils auraient été responsables de l’accident en n’ayant pas pris les mesures adaptées pour protéger les utilisateurs de la route, qui aurait été de fermer cette dernière.</p>
+            <p class="medium">Ils ont finalement été acquittés par le Tribunal Fédéral après un recours alors que la justice Valaisanne les avait condamnés à deux mois de prison avec sursis pour homicide par négligence.</p>
+    
+        </section>
+    
+        <footer>
+            <p>Les données proviennent de <a href="https://www.envidat.ch/dataset/avalanche-accidents-in-switzerland-since-1970-71">envidat.ch - Avalanche accidents in Switzerland since 1970/71</a></p>
+            <p>Repository Github : <a href="https://github.com/Dakee0/LLN-ProjetVisualDon?search=1">https://github.com/Dakee0/LLN-ProjetVisualDon?search=1</a></p>
+            <p>Site web réalisé par        </p>
+            <div>
+                <div>
+                    <!-- <img src="" alt=""> -->
+                    <p class="medium">Léa Macaluso</p>
+                    <a href="" class="small">LinkedIn</a>
+                </div>
+                <div>
+                    <!-- <img src="" alt=""> -->
+                    <p class="medium">Loïc Monnerat</p>
+                    <a href="" class="small">LinkedIn</a>
+                </div>
+                <div>
+                    <!-- <img src="" alt=""> -->
+                    <p class="medium">Nathan Stader</p>
+                    <a href="" class="small">LinkedIn</a>
+                </div>
+            </div>
+        </footer>
+    
+        <!-- Navigation -->
+        <nav>
+    
+        </nav>
 
-    <!-- les avalanches -->
-    <section id="sec2">
-
-    </section>
-
-    <!-- En suisse -->
-    <section id="sec3">
-
-    </section>
-
-    <!-- Nombre d'avalanche -->
-    <section id="sec4">
-
-    </section>
-
-    <!-- Les types -->
-    <section id="sec5">
-
-    </section>
-
-    <!-- Anecdotes -->
-    <section id="sec6">
-
-    </section>
-
-    <footer>
-        <div></div>
-    </footer>
-
-    <!-- Navigation -->
-    <nav>
-
-    </nav>
 </body>
-<script src="js/main.js"></script>
+<script src="main.js" type="module"></script>
+
 </html>
