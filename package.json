@@ -2,8 +2,7 @@
   "dependencies": {
     "gsap": "^3.12.5",
     "locomotive-scroll": "^4.1.4",
-    "normalize.css": "^8.0.1",
-    "parcel": "^2.12.0"
+    "normalize.css": "^8.0.1"
   },
   "name": "lln-projetvisualdon",
   "description": "Projet réalisé par\r **Léa Macaluso, Loïc Monnerat & Nathan Stader** de la M51-2 dans le cadre du cours VisualDon.",
@@ -11,7 +10,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npx parcel index.html",
-    "build": "npx parcel build"
+    "build": "npx parcel build --no-cache index.html"
   },
   "repository": {
     "type": "git",
@@ -22,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/Dakee0/LLN-ProjetVisualDon/issues"
   },
-  "homepage": "https://github.com/Dakee0/LLN-ProjetVisualDon#readme"
+  "homepage": "https://github.com/Dakee0/LLN-ProjetVisualDon#readme",
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  }
 }
