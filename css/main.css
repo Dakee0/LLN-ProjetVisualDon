@@ -72,7 +72,7 @@ strong{
     left: 50%;
     transform: translateX(-40%);
 }
-p{
+section p{
     display: block;
     width: 50vw;
 }
@@ -103,7 +103,7 @@ header h1 {
     position: fixed;
     color: white;
     top: 25%;
-    left: 25%;
+    left: 15%;
     transform: translate(-50%, -50%)
 }
 
@@ -156,6 +156,14 @@ header a {
 
 #sec2{
     height: 300vh;
+    position: relative;
+}
+
+#sec2 video{
+    position: relative;
+    width: 100vw;
+    left: -12.5%;
+    opacity: 0.3;
 }
 
 
@@ -189,20 +197,20 @@ header a {
     text-align: center;
     position: absolute;
     font-family: "Unbounded", sans-serif;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 700;
     bottom: 55%;
 }
 #sec5 div:nth-of-type(1) p:first-of-type::after{
-    left: 80%;
+    left: 105%;
     
 }
 #sec5 div:nth-of-type(2) p:first-of-type::after{
-    left: 75%;
+    left: 85%;
     bottom: 50%;
 }
 #sec5 div:nth-of-type(3) p:first-of-type::after{
-    left: 30%;
+    left: 32%;
     bottom: 40%;
 }
 #sec5 div:nth-of-type(4) p:first-of-type::after{
@@ -212,22 +220,22 @@ header a {
 #sec5 div p:first-of-type{
     position: relative;
     font-family: "Unbounded", sans-serif;
-    font-size: 8rem;
+    font-size: 7rem;
     font-weight: 900;
     padding-bottom: 20px;
     opacity: 0.4;
 }
 
 #sec5 div:nth-of-type(2) p:first-of-type{
-    font-size: 7rem;
+    font-size: 5.5rem;
     
 }
 #sec5 div:nth-of-type(3) p:first-of-type{
-    font-size: 5rem;
+    font-size: 4rem;
     
 }
 #sec5 div:nth-of-type(4) p:first-of-type{
-    font-size: 4rem;
+    font-size: 3rem;
     
 }
 #sec5 div p:nth-of-type(2){
@@ -236,19 +244,19 @@ header a {
     min-height: 50px ;
     padding: 5px 20px;
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-family: "Montserrat", sans-serif;
     display: block;
     background-color: white;
     color: var(--main);
     left: 30%;
-    bottom: 30%;
+    bottom: 40%;
 }
 #sec5 div:nth-of-type(3) p:nth-of-type(2){
-    left: 20%;
+    left: 15%;
 }
 #sec5 div:nth-of-type(4) p:nth-of-type(2){
-    left: 20%;
+    left: 15%;
 }
 #sec5 div div{
     width: 50%;
@@ -262,19 +270,39 @@ header a {
     bottom: 55%;
 }
 #sec5 div p:nth-of-type(3){
-    display: none;
+    height: 0px;
+    overflow: hidden;
 }
 #sec5 div.active p:nth-of-type(3){
-    display: inline;
+    height: auto;
 }
 #sec5 div.active p:nth-of-type(1){
     opacity: 1;
 }
 
 #sec6{
-    height: 700vh;
+    height: 800vh;
     background-color: var(--second);
     color: var(--title);
+}
+#sec6 div:nth-of-type(2){
+    position: relative;
+}
+#sec6 div:nth-of-type(2) img:nth-of-type(1){
+    position: absolute;
+    width: 45%;
+    right: 0%;
+    top: 25%;
+    
+}
+#sec6 div:nth-of-type(2) img:nth-of-type(2){
+    position: relative;
+    height: 40%;
+    top: 35%;
+    right: 30%;
+}
+#sec6 div:nth-of-type(2) video{
+    width: 50%;
 }
 #sec6 div:first-of-type{
     display: flex;
