@@ -102,7 +102,7 @@ header h1 {
     z-index: -102;
     position: fixed;
     color: white;
-    top: 25%;
+    top: 20%;
     left: 15%;
     transform: translate(-50%, -50%)
 }
@@ -163,7 +163,6 @@ header a {
     position: relative;
     width: 100vw;
     left: -12.5%;
-    opacity: 0.3;
 }
 
 
@@ -281,7 +280,7 @@ header a {
 }
 
 #sec6{
-    height: 800vh;
+    height: 700vh;
     background-color: var(--second);
     color: var(--title);
 }
