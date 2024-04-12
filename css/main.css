@@ -176,6 +176,52 @@ header a {
     height: 100vh;
 }
 
+/* Styles for the chart legend */
+.chart-legend {
+    font-size: 0.7rem;
+    padding-left: 20px;
+  }
+  
+  .legend-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  
+  .legend-color {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .legend-avalanches {
+    background-color: #3C8DBC; /* Replace with the actual color for avalanches */
+  }
+  
+  .legend-caught {
+    background-color: #f6be2f; /* Replace with the actual color for people caught */
+  }
+  
+  .legend-dead {
+    background-color: #7b7b7b; /* Replace with the actual color for deaths */
+  }
+
+  .line {
+    stroke-width: 2; /* État normal */
+    transition: stroke-width 0.3s;
+  }
+  
+  .line-hover {
+    stroke-width: 5; /* État survolé */
+  }
+
+  .legend-bold {
+    font-weight: bold;
+  }  
+  
+
 
 #sec5{
     height: 100vh;
@@ -330,4 +376,7 @@ footer > div{
     display: flex;
     justify-content: space-between;
     text-align: center;
+}
+.line{
+    fill: none;
 }

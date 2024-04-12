@@ -92,7 +92,21 @@
     
         <!-- Nombre d'avalanche -->
         <section id="sec4" data-scroll-section>
-            <svg></svg>
+            <svg width = '100%' height = '60vh'>
+            </svg>
+            <!-- Legend container -->
+            <div class="chart-legend">
+                <div class="legend-item" data-line="caught">
+                    <span class="legend-color legend-caught"></span>Nombre de gens emportés
+                  </div>
+                <div class="legend-item" data-line="avalanches">
+                  <span class="legend-color legend-avalanches"></span>Nombre d’avalanches
+                </div>
+                <div class="legend-item" data-line="dead">
+                  <span class="legend-color legend-dead"></span>Nombre de morts
+                </div>
+              </div>
+              
             <p class="right">Si l’on remonte jusqu’au prémices des données que nous possédons, soit la saisons 1970/71, et que prenons une
                 période qui s’étend jusqu’au dernières données en notre possessions, soit la saison 2022/23, on observe un
                 totale de 4513 avalanches pour 8647 personnes emportés et tout de même 1305 personnes décédées.</p>
@@ -178,6 +192,7 @@
         </nav>
 
 </body>
+<script src="https://d3js.org/d3.v6.min.js"></script>
 <script src="main.js" type="module"></script>
 
 </html>

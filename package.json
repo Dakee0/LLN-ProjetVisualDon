@@ -1,6 +1,8 @@
 {
   "dependencies": {
     "d3": "^7.9.0",
+    "d3-fetch": "^3.0.1",
+    "d3-selection": "^3.0.0",
     "gsap": "^3.12.5",
     "locomotive-scroll": "^4.1.4",
     "normalize.css": "^8.0.1"
@@ -24,6 +26,7 @@
   },
   "homepage": "https://github.com/Dakee0/LLN-ProjetVisualDon#readme",
   "devDependencies": {
-    "parcel": "^2.12.0"
+    "parcel": "^2.12.0",
+    "parcel-reporter-static-files-copy": "^1.5.3"
   }
 }
