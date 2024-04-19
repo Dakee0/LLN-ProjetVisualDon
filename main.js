@@ -1,5 +1,6 @@
 
 import { drawMultilineChart } from './js/d3.js';
+import  { createHeatmap } from './js/heatmap';
 import data from './data/avalanches.json'
 import "./js/locomotiveScroll.js"
 
@@ -24,3 +25,10 @@ function calculerHauteurTotale() {
     
     return hauteurTotale;
   }
+
+
+// Création de la heatmap et ajout à la section 3
+const containerId = document.getElementById('map');
+createHeatmap(containerId);
+console.warn(map);
+
