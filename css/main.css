@@ -221,6 +221,10 @@ header a {
     height: 100vh;
 }
 
+.line{
+    fill: none;
+}
+
 /* Styles for the chart legend */
 .chart-legend {
     font-size: 0.7rem;

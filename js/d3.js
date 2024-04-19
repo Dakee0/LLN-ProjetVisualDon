@@ -1,3 +1,4 @@
+import * as d3 from 'd3';
 function drawMultilineChart(data) {
     const svg = d3.select('#sec4 svg');
     const margin = { top: 20, right: 10, bottom: 30, left: 30 };

@@ -1,9 +1,10 @@
 
 import { drawMultilineChart } from './js/d3.js';
 import data from './data/avalanches.json'
-import {gsapfin} from "./js/gsap.js"
 import "./js/locomotiveScroll.js"
 
+drawMultilineChart(data);
+console.warn(data);
 let pourcentage = document.querySelectorAll('#sec5 > div > div')
 pourcentage.forEach(function(div) {
     div.addEventListener('mouseenter', (e)=>{
@@ -23,5 +24,3 @@ function calculerHauteurTotale() {
     
     return hauteurTotale;
   }
-drawMultilineChart(data);
-console.warn(data);
