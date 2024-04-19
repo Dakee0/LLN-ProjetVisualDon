@@ -270,6 +270,13 @@ header a {
     font-weight: bold;
   }  
 
+  .tooltip {
+    font-size: 0.9rem;
+    color: black;
+    text-align: center;
+}
+
+
 #sec5{
     height: 100vh;
     display: flex;
