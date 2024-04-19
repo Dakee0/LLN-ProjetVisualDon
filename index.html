@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Avalanches Swiss</title>
+    <title>Avalanches Insights</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,16 +13,23 @@
         rel="stylesheet">
 </head>
 
-<body data-scroll-container>
+<body class="smooth-scroll">
 
         <header data-scroll-section>
-            <h1 data-scroll data-scroll-sticky data-scroll-target="header" >avalanches insights</h1>
+            <h1 data-scroll data-scroll-sticky data-scroll-target="header" >avalanches <br> insights</h1>
             <img src="img/montagne(1).png" alt="image du cervin" data-scroll data-scroll-speed="4">
             <img src="img/montagne(2).png" alt="image du cervin" data-scroll data-scroll-speed="2">
             <img src="img/montagne(3).png" alt="image du cervin">
-            <a href="https://heig-vd.ch/" >Projet dans le cadre d'un cour de l'heig-vd</a>
-            <a href="#sec1"></a>
-            <svg></svg>
+            <a href="https://heig-vd.ch/" >Projet dans le cadre d'un cours de l'heig-vd</a>
+            <div data-scroll data-scroll-speed="2">
+                <svg width="100vw" height="70vh">
+                    <path xmlns="http://www.w3.org/2000/svg" id="montPath" d="M1105,1.5c-36.56,73.99-89.31,54.64-117.78,151.88-2.07,7.09-3.13,14.46-2.78,21.84,1.25,26.7,20.99,20.73,9.01,58-18.22,56.67-107.89,69.11-130.89,157.78s-12.33,294.39-12.33,294.39" style="fill:none;stroke:#F6BE2F;stroke-width:3" />                
+                    <g id="montCercle">
+                        <circle r="20" fill="#FBDF97" />
+                        <circle r="12" fill="#F6BE2F" />
+                    </g>
+                </svg>
+            </div>
             <div class="brouillard" data-scroll data-scroll-speed="4"></div>
             <div class="brouillard" data-scroll data-scroll-speed="2"></div>
         </header>
@@ -30,7 +37,7 @@
         <!-- le ski en suisse -->
         <section id="sec1" data-scroll-section>
             <h2 class="title left underline" data-scroll data-scroll-direction="vertical" data-scroll-speed="4">le ski en suisse</h2>
-            <p class="small left" data-scroll data-scroll-speed="1">Pour la suisse, le <strong>ski</strong> n’est pas
+            <p class="small left">Pour la suisse, le <strong>ski</strong> n’est pas
                 seulement une activité ou un sport.</p>
             <p class="big right" data-scroll data-scroll-speed="5">Le <strong>ski</strong> fait partie de la <strong>culture
                     suisse</strong></p>
@@ -40,8 +47,8 @@
                     <p class="title yellow">22.3</p>
                     <p class="medium">millions de journées skieurs pour la saison 22/23 dans les stations suisses</p>
                 </div>
-                <div>
-                    <!-- <img src="" alt=""> -->
+                <div class="right" data-scroll data-scroll-speed="3">
+                    <img src="img/AdobeStock_54943294.jpeg" alt="Skieurs">
                 </div>
             </div>
             <div class="right" data-scroll data-scroll-speed="4">
@@ -50,9 +57,9 @@
                 <p class="medium">chaque année de skieurs</p>
             </div>
     
-            <div data-scroll data-scroll-speed="3">
-                <p class="big">La <strong>suisse</strong> est également une des plus grosses nations dans ce sport</p>
-                <!-- <img src="" alt=""> -->
+            <div>
+                <p class="big" data-scroll data-scroll-speed="3">La <strong>suisse</strong> est également une des plus grosses nations dans ce sport</p>
+                <img class="right" data-scroll data-scroll-speed="4" src="img/1z1RuGE54AG9aFkm8vKFlE.webp" alt="Lara gut et Marco Odermatt">
             </div>
             <div data-scroll data-scroll-speed="1">
                 <p class="big middle">Mais ce n’est pas sans <strong>danger</strong> !</p>
@@ -65,7 +72,7 @@
             <h2 class="title left underline" data-scroll data-scroll-speed="4">les avalanches</h2>
             <div>
                 <p class="big yellow" data-scroll data-scroll-speed="4">Un danger mortel innatendu</p>
-                <p class="right" data-scroll data-scroll-speed="2">Les avalanches représentent le principal danger naturel dans l'espace alpin. Elles se manifestent sous la
+                <p class="right">Les avalanches représentent le principal danger naturel dans l'espace alpin. Elles se manifestent sous la
                     forme de masses de neige dévalant les pentes, résultant de l'instabilité du manteau neigeux. <br><br>
         
                     La rupture de ce dernier peut être déclenchée par divers facteurs tels que des forces naturelles dûe à une
@@ -76,7 +83,7 @@
     
             <p class="big" data-scroll data-scroll-speed="4">Ces déferlements de neige <strong>emportent tout</strong> sur leur passage</p>
     
-            <p class="big middle" data-scroll data-scroll-speed="3">Constituant une force puissante, souvent <strong>dévastatrice</strong> et
+            <p class="big middle" data-scroll data-scroll-speed="2">Constituant une force puissante, souvent <strong>dévastatrice</strong> et
                 <strong>mortelle</strong>.</p>
     
         </section>
@@ -114,29 +121,31 @@
     
         <!-- Les types -->
         <section id="sec5" data-scroll-section>
-            <div data-scroll data-scroll-speed="1" class="active">
-                <p>57</p>
-                <p>randonnée</p>
-                <div></div>
-                <p>La randonné à ski est le sport d’hiver le plus dangereux en montagne. On ne compte pas moins de 2581 morts.</p>
-            </div>
-            <div data-scroll data-scroll-speed="2">
-                <p>33</p>
-                <p>hors-piste</p>
-                <div></div>
-                <p>Le hors piste est la deuxième cause de mortalité avec 1474 personnes décédées.</p>
-            </div>
-            <div data-scroll data-scroll-speed="3">
-                <p>7</p>
-                <p>balisé</p>
-                <div></div>
-                <p>Le terme balisé englobe toutes les voies de communication, que ce soit des routes, des chemins, des voies de chemin de fer ou encore des pistes de ski. On dénombre 297 morts.</p>
-            </div>
-            <div data-scroll data-scroll-speed="4">
-                <p>1</p>
-                <p>habitations</p>
-                <div></div>
-                <p>Même si c’est bien moins fréquent, il arrive que des bâtiments soit touché et que leurs occupants soit tué. Un total de 45 morts.</p>
+            <div>
+                <div class="active" style="flex-grow: 2">
+                    <p>57</p>
+                    <p>randonnée</p>
+                    <div></div>
+                    <p>La randonnée à ski est le sport d’hiver le plus dangereux en montagne. On ne compte pas moins de 2581 morts.</p>
+                </div>
+                <div data-scroll data-scroll-speed="2" style="flex-grow: 1.5">
+                    <p>33</p>
+                    <p>hors-piste</p>
+                    <div></div>
+                    <p>Le hors piste est la deuxième cause de mortalité avec 1474 personnes décédées.</p>
+                </div>
+                <div data-scroll data-scroll-speed="3" style="flex-grow: 1.2">
+                    <p>7</p>
+                    <p>balisé</p>
+                    <div></div>
+                    <p>Le terme balisé englobe toutes les voies de communication, que ce soit des routes, des chemins, des voies de chemin de fer ou encore des pistes de ski. On dénombre 297 morts.</p>
+                </div>
+                <div data-scroll data-scroll-speed="4">
+                    <p>1</p>
+                    <p>habitations</p>
+                    <div></div>
+                    <p>Même si c’est bien moins fréquent, il arrive que des bâtiments soit touché et que leurs occupants soit tué. Un total de 45 morts.</p>
+                </div>
             </div>
         </section>
     
@@ -151,15 +160,15 @@
             <p class="big right" data-scroll data-scroll-speed="4">Elle est l’avalanche la plus <strong>meurtrière</strong> des 52 dernières saisons. Elle emporte et <strong>tue 11 personnes...</strong></p>
             <p class="medium" data-scroll data-scroll-speed="2">Dont <strong>un petit garçon de 9 ans</strong> et son père, habitants à Taesch, ainsi que neuf occupants d’un minibus, le chauffeur de Törbel, deux Vaudois, un Zougois et quatre Allemands.</p>
             <p class="medium right" data-scroll data-scroll-speed="3">La veille, il avait <strong>fortement neigé</strong>, des coulées de neige était annoncées pour cette journée fatidique.</p>
-            <p class="big yellow" data-scroll data-scroll-speed="4">L’avalanche aurait été déclenchée naturellement.</p>
+            <p class="big yellow" data-scroll data-scroll-speed="5">L’avalanche aurait été déclenchée naturellement.</p>
             <div>
                 <video src="video/Avalanche-Zermatt-02-03-1985.mp4" controls data-scroll data-scroll-speed="2"></video>
                 <img src="img/avalanche-la-plus-mortelle-52-der-saisons.png" alt="" data-scroll data-scroll-speed="3">
                 <img src="img/condamnations.png" alt="" data-scroll data-scroll-speed="4">
             </div>
-            <p class="medium" data-scroll data-scroll-speed="2">Suite à ce drame, <strong>un procès a été lancé</strong> contre le chef de service cantonal d’entretien des routes et le voyer de l’arrondissement de Viège.</p>
-            <p class="medium right" data-scroll data-scroll-speed="4">Car selon les plaignants, ils auraient été responsables de l’accident en n’ayant pas pris les mesures adaptées pour protéger les utilisateurs de la route, qui aurait été de fermer cette dernière.</p>
-            <p class="medium" data-scroll data-scroll-speed="3">Ils ont finalement été acquittés par le Tribunal Fédéral après un recours alors que la justice Valaisanne les avait condamnés à deux mois de prison avec sursis pour homicide par négligence.</p>
+            <p class="medium" data-scroll data-scroll-speed="5">Suite à ce drame, <strong>un procès a été lancé</strong> contre le chef de service cantonal d’entretien des routes et le voyer de l’arrondissement de Viège.</p>
+            <p class="medium right" data-scroll data-scroll-speed="2">Car selon les plaignants, <strong>ils auraient été responsables de l’accident</strong> en n’ayant pas pris les mesures adaptées pour protéger les utilisateurs de la route, qui aurait été de fermer cette dernière.</p>
+            <p class="medium" data-scroll data-scroll-speed="4"><strong>Ils ont finalement été acquittés</strong> par le Tribunal Fédéral après un recours <strong>alors que la justice Valaisanne les avait condamnés à deux mois de prison avec sursis pour homicide par négligence.</strong></p>
     
         </section>
     
@@ -169,30 +178,33 @@
             <p>Site web réalisé par        </p>
             <div>
                 <div>
-                    <!-- <img src="" alt=""> -->
+                    <img src="img/1685377798331.jpeg" alt="Photo de profil de Léa Macaluso">
                     <p class="medium">Léa Macaluso</p>
-                    <a href="" class="small">LinkedIn</a>
+                    <a href="https://www.linkedin.com/in/lea-macaluso/" class="small">LinkedIn</a>
                 </div>
                 <div>
-                    <!-- <img src="" alt=""> -->
+                    <img src="img/1678874916066.jpeg" alt="Photo de profil de Loïc Monnerat">
                     <p class="medium">Loïc Monnerat</p>
-                    <a href="" class="small">LinkedIn</a>
+                    <a href="https://www.linkedin.com/in/loic-monnerat/" class="small">LinkedIn</a>
                 </div>
                 <div>
-                    <!-- <img src="" alt=""> -->
+                    <img src="img/1676814439250.jpeg" alt="Photo de profil de Nathan Stader">
                     <p class="medium">Nathan Stader</p>
-                    <a href="" class="small">LinkedIn</a>
+                    <a href="https://www.linkedin.com/in/nathan-stader/" class="small">LinkedIn</a>
                 </div>
             </div>
         </footer>
     
         <!-- Navigation -->
-        <nav>
-    
-        </nav>
+        <svg width="8vw" height="auto" id="nav">
+            <path xmlns="http://www.w3.org/2000/svg" id="monChemin" d="M39.7,0c0,58.11,48.93,68.8,48.93,125.75S2.17,193.97,2.17,236.93s102,51.9,102,119.14S4.48,451.31,4.48,534.11c0,106.71,83.32,82.8,83.32,145.19s-61,65.89-61,161.52,26.37,89.8,26.37,159.18" style="fill:none;stroke:#F6BE2F;stroke-width:3" transform="scale(0.8, 0.8)"/>            
+            <g id="monCercle">
+                <circle r="25" fill="#FBDF97" />
+                <circle r="15" fill="#F6BE2F" />
+            </g>
+        </svg>
 
 </body>
-<script src="https://d3js.org/d3.v6.min.js"></script>
 <script src="main.js" type="module"></script>
 
 </html>
