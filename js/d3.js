@@ -19,7 +19,8 @@ function drawMultilineChart(data) {
     let chartData = [];
 
     summaryData.forEach((values, key) => {
-        const yearDate = parseInt(key.substring(0, 4));
+        // Créer un objet Date au niveau de votre chartData
+        const yearDate = new Date(key.substring(0, 4), 0, 1);
         console.warn(key);
         chartData.push({
             year: key,
@@ -35,7 +36,12 @@ function drawMultilineChart(data) {
     xScale.domain(d3.extent(chartData, d => d.yearDate));
     yScale.domain([0, d3.max(chartData, d => Math.max(d.avalanches, d.caught, d.dead))]);
 
-    const xAxis = d3.axisBottom(xScale);
+    // Définir un formatteur custom
+    const xAxis = d3.axisBottom(xScale)
+        .tickFormat(function (d) {
+            const nextYear = (d.getFullYear() + 1).toString().slice(-2);
+            return `${d.getFullYear()}/${nextYear}`;
+        });
     const yAxis = d3.axisLeft(yScale);
 
     const lineAvalanches = d3.line()
