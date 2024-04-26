@@ -212,13 +212,14 @@ header a {
 }
 
 #sec3{
-    height: 100vh;
-    background-color: var(--title);
+    height: 150vh;
+}
+#sec3 p{
+    padding-top: 50px;
 }
 
-
 #sec4{
-    height: 100vh;
+    height: 150vh;
 }
 
 .line{
