@@ -22,7 +22,6 @@ function drawMultilineChart(data) {
     summaryData.forEach((values, key) => {
         // Créer un objet Date au niveau du chartData
         const yearDate = new Date(key.substring(0, 4), 0, 1);
-        console.warn(key);
         chartData.push({
             year: key,
             yearDate: yearDate,

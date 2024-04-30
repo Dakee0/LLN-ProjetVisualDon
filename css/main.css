@@ -190,9 +190,41 @@ header a {
     padding-bottom: 25vh;
 }
 
-#sec1 img{
-    width: 40vw;
+#sec1 .image-container {
+    position: relative;
+    display: inline-block;
+    width: 40vw; /* Largeur adaptée à votre mise en page */
+    margin-bottom: 20px; /* Espace après la légende */
 }
+#sec1 .image-container div {
+    position: absolute;
+    top: 86%;
+    text-align: left;
+    font-size: 0.6rem;
+    font-style: italic;
+}
+#sec1 .image-container div a {
+    color: var(--second);
+    text-decoration: underline;
+}
+#sec1 img {
+    display: block;
+    width: 100%; /* Utilise la largeur du conteneur pour une meilleure flexibilité */
+    height: auto;
+    border-radius: 25px;
+}
+
+#sec1 .caption {
+    display: block;
+    width: 100%; /* Utilise la largeur du conteneur */
+    text-align: center;
+    color: #808080; /* Gris moyen, ajustez selon vos besoins */
+    background-color: transparent; /* Pas de fond pour la légende */
+    font-size: 0.8em; /* Taille du texte réduite */
+    padding: 5px 0; /* Padding pour un peu d'espace autour du texte */
+    box-sizing: border-box;
+}
+
 #sec1 div:nth-of-type(1) img{
     margin-top: 10%;
 }
@@ -201,6 +233,19 @@ header a {
     height: 300vh;
     position: relative;
 }
+
+#sec2::After{
+    position: absolute;
+    left: -20%;
+    top: 52%;
+    content: '';
+    width: 110vw;
+    height : 70vh;
+    background-image: url( '/img/topographie.svg' );
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: -1;
+} 
 
 #sec2 video{
     position: relative;
@@ -211,14 +256,30 @@ header a {
     padding-bottom: 100px;
 }
 
+#sec2 .caption{
+    font-size: 0.6rem;
+    color: var(--title);
+    display: block;
+    width: 50%;
+    font-style: italic;
+}
+
+#sec2 .caption a{
+    color: var(--second);
+    text-decoration: underline;
+}
+
+
 #sec3{
-    height: 100vh;
-    background-color: var(--title);
+    height: 150vh;
+}
+#sec3 p{
+    padding-top: 50px;
 }
 
 
 #sec4{
-    height: 100vh;
+    height: 150vh;
 }
 
 .line{
@@ -538,6 +599,21 @@ footer > div{
     justify-content: space-between;
     text-align: center;
 }
+
+footer ::After{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: '';
+    width: 100vw;
+    height : 30vh;
+    background-image: url( '/img/mountainsBlack.svg' );
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom left;
+    opacity: 1%;
+    z-index: -1;
+} 
 
 #nav{
     position: fixed;
