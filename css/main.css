@@ -91,6 +91,7 @@ header {
     height: 100vh;
     position: relative;
     overflow: hidden;
+    scroll-snap-align: start;
 }
 
 header img {
@@ -272,13 +273,16 @@ header a {
 
 #sec3{
     height: 150vh;
+    position: relative;
 }
 #sec3 p{
     padding-top: 50px;
 }
 
+
 #sec4{
     height: 150vh;
+    position: relative;
 }
 
 .line{
@@ -580,6 +584,7 @@ footer{
     justify-content: space-around;
     padding: 0% 10% ;
     background-color: var(--main);
+    scroll-snap-align: start;
 }
 footer a{
     color: var(--second);
@@ -616,7 +621,13 @@ footer ::After{
 
 #nav{
     position: fixed;
-    top: 5%;
+    top: 0;
     right: 0;
     z-index: -104;
+}
+#navTitle{
+    fill:var(--main);
+    font-weight: 700;
+    font-size: 0.7rem;
+    text-align: right;
 }

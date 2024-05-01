@@ -4,7 +4,7 @@ import { ScatterplotLayer } from "@deck.gl/layers";
 import { MapboxOverlay } from "@deck.gl/mapbox";
 import "mapbox-gl/dist/mapbox-gl.css";
 import data from "./../data/avalanches.json";
-
+console.warn(data);
 // Données fictives
 const dataTest = [
   { position: [8.2275, 46.8182], weight: 10000 }, // Modification de la structure des données pour correspondre à la position [longitude, latitude]
@@ -41,7 +41,6 @@ const map = new mapboxgl.Map({
   center: [8.2275, 46.8182],
   zoom: 6.9,
 });
-console.warn(dataTest);
 map.once("load", () => {
   const deckOverlay = new MapboxOverlay({
     interleaved: true,
@@ -60,24 +59,3 @@ map.once("load", () => {
   map.addControl(new mapboxgl.NavigationControl());
   map.addControl(deckOverlay);
 });
-
-// new ScatterplotLayer({
-//   data: data,
-//   pickable: true,
-//   opacity: 1,
-//   filled: true,
-//   radiusScale: 1,
-//   radiusMinPixels: 1,
-//   getPosition: d => [d.position[0], d.position[1]],
-//   getRadius: d => 1,
-//   getFillColor: d => [255, 140, 0]
-// }),
-// // new HeatmapLayer({
-// //   id: "map",
-// //   data: data,
-// //   getPosition: (d) => d.position, // Utilisation de la position
-// //   getWeight: (d) => d.weight,
-// //   aggregation: "SUM",
-// //   radiusPixels: 10,
-// //   colorDomain: [100, 1000],
-// // }),

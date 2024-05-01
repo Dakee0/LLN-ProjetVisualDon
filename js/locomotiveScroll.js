@@ -21,7 +21,8 @@ ScrollTrigger.scrollerProxy("body", {
 });
 
 gsap.set('#monChemin', {
-    xPercent: 30,
+    xPercent: 220,
+    yPercent: 5,
 })
 gsap.to("#monCercle", {
     scrollTrigger: {
@@ -58,6 +59,68 @@ gsap.to("#montCercle", {
     duration: 3
 });
 
+gsap.to("#navTitle", {
+    scrollTrigger: {
+        trigger: "#sec1",
+        start: "top top",
+        scroller: 'body',
+        endTrigger: "footer",
+        end: "bottom bottom",
+        scrub: true,
+    },
+    motionPath: {
+        path: "#monChemin",
+        align: "#monChemin",
+        alignOrigin: [0.5, 0.5],
+    },
+    duration: 3
+});
+gsap.set('#navTitle', {
+    xPercent: -120,
+    yPercent: -10,
+})
+
+function changeSVGText(newText) {
+    gsap.to("#navTitle", { duration: 0.5, opacity: 1, textContent: newText});
+
+    // Masquer le texte après quelques secondes
+    gsap.to("#navTitle", { duration: 0.5, opacity: 0, delay: 5 });
+}
+
+// Fonction d'initialisation de ScrollTrigger
+function initScrollTrigger() {
+    const sections = document.querySelectorAll("section");
+
+    sections.forEach(section => {
+        ScrollTrigger.create({
+            trigger: section,
+            start: "top center",
+            onEnter: () => {
+                const sectionId = section.id;
+                switch (sectionId) {
+                    case "sec1":
+                        changeSVGText("Ski");
+                        break;
+                    case "sec2":
+                        changeSVGText("Avalanches");
+                        break;
+                    case "sec3":
+                        changeSVGText('Nombre d\'Avalanches');
+                        break;
+                    case "sec4":
+                        changeSVGText("Graphique");
+                        break;
+                    case "sec6":
+                        changeSVGText("Anecdote");
+                        break;
+                    default:
+                        break;
+                }
+            }
+        });
+    });
+}
+
 gsap.utils.toArray('strong').forEach((strong) => {
     ScrollTrigger.create({
         trigger: strong,
@@ -66,6 +129,7 @@ gsap.utils.toArray('strong').forEach((strong) => {
     })
 })
 
+initScrollTrigger()
 ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
 
 ScrollTrigger.refresh();
