@@ -53,10 +53,11 @@ map.once("load", () => {
         getWeight: (d) => d.weight,
         aggregation: "SUM",
         radiusPixels: 100,
-        colorDomain: [1, 15],
+        colorDomain: [1, 10],
       }),
     ],
   });
+  map.addControl(new mapboxgl.NavigationControl());
   map.addControl(deckOverlay);
 });
 
