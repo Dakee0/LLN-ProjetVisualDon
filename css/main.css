@@ -538,6 +538,28 @@ header a {
     opacity: 1;
 }
 
+.map-legend {
+    position: left;
+    right: 20px; /* Adjust according to your layout */
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1; /* Make sure it's above the map */
+}
+.map-legend div {
+    display: flex;
+    align-items: left;
+    margin-bottom: 5px;
+}
+.map-legend div:last-child {
+    margin-bottom: 0;
+}
+.map-legend .color-box {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+
 
 
 #sec6{
