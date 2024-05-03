@@ -61,22 +61,3 @@ map.once("load", () => {
   map.addControl(deckOverlay);
 });
 
-const colors = [
-  '#fff33b', '#fdc70c', '#f3a53f', '#f07c3d', '#ed683c', '#e93e3a'  // Replace with your actual color scale
-];
-const labels = ['Bas', 'Moyen-Bas', 'Moyen', 'Moyen-Élevé', 'Élevé', 'Très élevé'];  // Corresponding labels
-
-const legend = document.getElementById('map-legend');
-colors.forEach((color, index) => {
-  const item = document.createElement('div');
-  const colorBox = document.createElement('div');
-  colorBox.style.backgroundColor = color;
-  colorBox.className = 'color-box';
-
-  const text = document.createElement('span');
-  text.textContent = labels[index];
-
-  item.appendChild(colorBox);
-  item.appendChild(text);
-  legend.appendChild(item);
-});

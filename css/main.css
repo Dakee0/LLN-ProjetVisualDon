@@ -68,7 +68,7 @@ strong{
     transition: color 0.5s ease-in;
 }
 strong.active{
-    color: var(--main);
+    color: var(--main)!important;
 }
 .yellow{
     color: var(--main);
@@ -187,7 +187,7 @@ header a {
 }
 
 #sec1{
-    height: 400vh;
+    height: 450vh;
     padding-bottom: 25vh;
 }
 
@@ -203,6 +203,9 @@ header a {
     text-align: left;
     font-size: 0.6rem;
     font-style: italic;
+}
+#sec1 .image-container div:first-of-type {
+    top: 90%;
 }
 #sec1 .image-container div a {
     color: var(--second);
@@ -231,7 +234,7 @@ header a {
 }
 
 #sec2{
-    height: 300vh;
+    height: 400vh;
     position: relative;
 }
 
@@ -259,20 +262,20 @@ header a {
 
 #sec2 .caption{
     font-size: 0.6rem;
-    color: var(--title);
+    color: grey;
     display: block;
     width: 50%;
     font-style: italic;
 }
 
 #sec2 .caption a{
-    color: var(--second);
+    color: grey;
     text-decoration: underline;
 }
 
 
 #sec3{
-    height: 150vh;
+    height: 220vh;
     position: relative;
 }
 #sec3 p{
@@ -538,29 +541,39 @@ header a {
     opacity: 1;
 }
 
-.map-legend {
-    position: left;
-    right: 20px; /* Adjust according to your layout */
-    padding: 10px;
-    border-radius: 5px;
-    z-index: 1; /* Make sure it's above the map */
-}
-.map-legend div {
+#map-legend {
     display: flex;
-    align-items: left;
-    margin-bottom: 5px;
+    position: relative;
+    top: 2.5%;
 }
-.map-legend div:last-child {
-    margin-bottom: 0;
-}
-.map-legend .color-box {
-    width: 20px;
+
+#map-legend div {
+    display: block;
+    position: relative;
+    top: -550%;
+    background: linear-gradient(90deg, rgba(255,241,156,0) 0%, rgba(255,241,156,1) 33%, rgba(255,209,96,1) 64%, rgba(243,80,39,1) 100%);
+    width: 15vw;
     height: 20px;
-    margin-right: 10px;
+    border: 1px solid var(--title);
 }
-
-
-
+#map-legend p{
+    position: absolute;
+    color: var(--title);
+    font-size: 0.7rem;
+    transform:translate(-3%, -180%);
+}
+#map-legend p:nth-of-type(1){
+    left: 2%;
+}
+#map-legend p:nth-of-type(2){
+    left: 8%;
+}
+#map-legend p:nth-of-type(3){
+    left: 14%;
+}
+#map-legend p:nth-of-type(4){
+    left: 20%;
+}
 
 #sec6{
     height: 650vh;
