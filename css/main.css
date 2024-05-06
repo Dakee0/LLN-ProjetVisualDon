@@ -13,6 +13,8 @@ body {
     overflow: hidden scroll;
     width: 100vw;
     height: auto;
+    position: relative;
+    z-index: -2;
 }
 
 :root {
@@ -101,12 +103,14 @@ header img {
     top: 0;
     left: 0;
 }
-
+#headTitle.active{
+    position: absolute;
+}
 header h1 {
     font-size: 7rem;
     font-family: "Unbounded", sans-serif;
     line-height: 90%;
-    z-index: -102;
+    z-index: -1;
     position: fixed;
     color: white;
     top: 20%;
@@ -115,17 +119,17 @@ header h1 {
 }
 
 header img:nth-of-type(1) {
-    z-index: -100;
+    z-index: 3;
     position: relative;
 }
 
 header img:nth-of-type(2) {
-    z-index: -101;
+    z-index: 2;
 
 }
 
 header img:nth-of-type(3) {
-    z-index: -103;
+    z-index: -2;
 
 }
 
@@ -137,35 +141,15 @@ header::after {
     position: absolute;
     bottom: 0%;
     background: white;}
-
+#headPoint{
+    position: relative;
+    z-index: 2;
+}
 header svg{
     position: absolute;
-    z-index: -105;
+    z-index: 2;
     bottom: 0%;
     left: 0%;
-}
-#arrow{
-    display: block;
-    width: 35px;
-    height: 35px;
-    border-top: 5px solid var(--main);
-    border-right: 5px solid var(--main);
-    transform: rotate(135deg) ;
-    position: absolute;
-    right: 48%;
-    top: 92%;
-    z-index: 1;
-    animation: arrow 1s infinite alternate;
-    cursor: pointer;
-}
-
-@keyframes arrow{
-    from{
-        transform: translateY(-50%) rotate(135deg);
-    }
-    to{
-        transform: translateY(-100%) rotate(135deg);
-    }
 }
 
 .brouillard{
@@ -175,6 +159,7 @@ header svg{
     position: absolute;
     bottom: 0%;
     background: linear-gradient(rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 1));
+    z-index: 3;
 }
 
 header a {
@@ -187,7 +172,7 @@ header a {
 }
 
 #sec1{
-    height: 450vh;
+    height: 420vh;
     padding-bottom: 25vh;
 }
 
@@ -234,7 +219,7 @@ header a {
 }
 
 #sec2{
-    height: 400vh;
+    height: 300vh;
     position: relative;
 }
 
@@ -275,7 +260,7 @@ header a {
 
 
 #sec3{
-    height: 220vh;
+    height: 170vh;
     position: relative;
 }
 #sec3 p{
@@ -284,7 +269,7 @@ header a {
 
 
 #sec4{
-    height: 150vh;
+    height: 100vh;
     position: relative;
 }
 
@@ -294,6 +279,7 @@ header a {
 
 /* Styles for the chart legend */
 .chart-legend {
+    position: relative;
     font-size: 0.7rem;
     padding-left: 20px;
   }
@@ -550,7 +536,7 @@ header a {
 #map-legend div {
     display: block;
     position: relative;
-    top: -550%;
+    top: -80%;
     background: linear-gradient(90deg, rgba(255,241,156,0) 0%, rgba(255,241,156,1) 33%, rgba(255,209,96,1) 64%, rgba(243,80,39,1) 100%);
     width: 15vw;
     height: 20px;
@@ -560,25 +546,19 @@ header a {
     position: absolute;
     color: var(--title);
     font-size: 0.7rem;
-    transform:translate(-3%, -180%);
+    transform:translate(-3%, -50%);
 }
 #map-legend p:nth-of-type(1){
     left: 2%;
 }
 #map-legend p:nth-of-type(2){
-    left: 8%;
-}
-#map-legend p:nth-of-type(3){
-    left: 14%;
-}
-#map-legend p:nth-of-type(4){
     left: 20%;
 }
 
 #sec6{
     height: 650vh;
     position: relative;
-    z-index: -105;
+    z-index: -2;
     background-color: var(--second);
     color: var(--title);
 }
@@ -601,6 +581,8 @@ header a {
 }
 #sec6 div:nth-of-type(2) video{
     width: 50%;
+    position: relative;
+    z-index: 2;
 }
 #sec6 div:first-of-type{
     display: flex;
@@ -614,13 +596,16 @@ header a {
 
 footer{
     height: 100vh;
+    z-index: 2;
     display: flex;
+    position: relative;
     flex-direction: column;
     justify-content: space-around;
     padding: 0% 10% ;
     background-color: var(--main);
     scroll-snap-align: start;
 }
+
 footer a{
     color: var(--second);
     font-weight: 700;
@@ -658,7 +643,7 @@ footer ::After{
     position: fixed;
     top: 0;
     right: 0;
-    z-index: -104;
+    z-index: -1;
 }
 #navTitle{
     fill:var(--main);

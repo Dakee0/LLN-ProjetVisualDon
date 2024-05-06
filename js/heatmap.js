@@ -4,7 +4,6 @@ import { ScatterplotLayer } from "@deck.gl/layers";
 import { MapboxOverlay } from "@deck.gl/mapbox";
 import "mapbox-gl/dist/mapbox-gl.css";
 import data from "./../data/avalanches.json";
-console.warn(data);
 
 // Données fictives
 const dataTest = [
@@ -30,7 +29,6 @@ for (let i = 0; i < data.length; i++) {
   // Ajoute l'objet de données à newDataObject
   newDataObject.data.push(entryObject);
 }
-console.warn(newDataObject.data);
 
 const containerId = document.getElementById("map");
 
