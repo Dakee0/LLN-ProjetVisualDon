@@ -10,7 +10,7 @@ Le projet exploite deux principales sources de données pour analyser et compren
 La première source de données provient d'envidat.ch, ce jeu de données a été créé par l'Institut WSL pour la recherche sur la neige et les avalanches. Il recense tous les accidents par avalanches de neige connus en Suisse depuis octobre 1970, incluant les incidents impliquant au moins une personne. Ces données sont régulièrement mises à jour après chaque année hydrologique pour inclure de nouvelles informations.
 [envidat.ch - Avalanche accidents in Switzerland since 1970/71](https://www.envidat.ch/dataset/avalanche-accidents-in-switzerland-since-1970-71)
 
-La deuxième source de données émane de seilbahnen.org, site des Remontées Mécaniques Suisses (RMS). Ces données ont été compilées par Laurent Vanat, un consultant spécialisé dans l'analyse économique et financière du tourisme de montagne. Ces données, issues du bilan saisonnier 2022/23, sont présentées sous forme de PDF et seront transformées en un jeu de données JSON pour faciliter leur exploitation.
+La deuxième source de données vient de seilbahnen.org, site des Remontées Mécaniques Suisses (RMS). Ces données ont été compilées par Laurent Vanat, un consultant spécialisé dans l'analyse économique et financière du tourisme de montagne. Ces données, issues du bilan saisonnier 2022/23, sont présentées sous forme de PDF. 
 [seilbahnen.org - Bilan saison 2022/2023](https://www.seilbahnen.org/fr/news/bilan-saison-2022-2023)
 
 ## 🔧 Description
@@ -28,16 +28,12 @@ La deuxième source de données émane de seilbahnen.org, site des Remontées M�
          - Niveaux de danger prévus
          - Données démographiques sur les victimes (nombre de décès, capturés, ensevelis)
          - Activité au moment de l'accident
+   
+   Les données ont finalement dûes être converties en JSON pour faciliter le traitement et l'exploitation de celles-ci.
 
 3. ⛷️ **Données sur la fréquentation des domaines skiables**
 
-   Les données sur la fréquentation des skieurs dans les stations suisses, initialement issues du bilan saisonnier 2022/23 en PDF, sont converties en JSON pour améliorer leur accessibilité, manipulation, et intégration dans des analyses et visualisations.
-   - **Format** : JSON
-   - **Contenu** :
-     - Identifiants (int)
-     - Saison (date)
-     - Nombre de skieurs (real)
-
+   Les données sur la fréquentation des skieurs dans les stations suisses, initialement issues du bilan saisonnier 2022/23 en PDF, ne sont finalement pas converties en JSON car elles ont été utilisées pour poser un contexte dans le site et montrer des chiffres clés pour la suite du scrollytelling.
 ## 🎯 But
 
 L'objectif de ce projet est de narrer l'histoire des risques d'avalanche en Suisse à travers une approche de scrollytelling, en combinant une analyse explicative avec des éléments de sensibilisation. En mettant en avant le danger des avalanches et en examinant leur corrélation avec l'affluence des skieurs, le projet vise à informer et à prévenir sur les risques d’avalanches.
